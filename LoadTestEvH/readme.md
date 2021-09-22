@@ -1,6 +1,12 @@
 ﻿# Load Testing for Azure Event Hub Namespace
 This is a tool that can be used to publish bulk data to an event hub, this application need json file for source data, the target event hub name, the target event hub connection string.
 
+## Prerequisites
+- Azure Event Hubs Namespace
+- .Net Core 3.1
+- File editor for formatting json file
+- Terminal for running `dotnet`
+
 ## How to run the application
 
 1. Open the project folder
