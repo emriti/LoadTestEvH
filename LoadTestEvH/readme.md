@@ -12,6 +12,6 @@ This is a tool that can be used to publish bulk data to an event hub, this appli
 1. Open the project folder
 2. Build the app using: `dotnet build`
 3. Run the app using: `dotnet .\bin\Debug\netcoreapp3.1\LoadTestEvH.dll <jsonFileLocation> <evhName> <evhConnString>`
-	- `jsonFileLocation: location of a json file that desired to be published to an event hub. Example and accepted structure could be seen at SampleFile1.json`
+	- `jsonFileLocation: location of a json file that desired to be published to an event hub. Example and accepted structure could be seen at sample_data.json`
 	- `evhName: event hub name`
 	- `evhConnString: connection string of the event hub namespace`
