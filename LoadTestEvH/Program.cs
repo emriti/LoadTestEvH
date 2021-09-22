@@ -59,14 +59,20 @@ namespace LoadTestEvH
                 });
 
             var dataBatch = await _producerClient.CreateBatchAsync();
-            var jsonResult = await LoadJsonFile(jsonFileLocation);
+
+            using var reader = new StreamReader(jsonFileLocation);
 
             var totalSent = 0;
             var i = 0;
-            foreach (var item in jsonResult)
+            while (reader.Peek() > 0)
             {
                 ++i;
-                if (!dataBatch.TryAdd(new EventData(Encoding.UTF8.GetBytes($"{item}"))))
+
+                var str = reader.ReadLine();
+                var obj = JObject.Parse(str);
+                var data = obj.SelectToken("message");
+
+                if (!dataBatch.TryAdd(new EventData(Encoding.UTF8.GetBytes($"{data}"))))
                 {
                     // if it is too large for the batch
                     throw new Exception($"Event {i} is too large for the batch and cannot be sent.");
