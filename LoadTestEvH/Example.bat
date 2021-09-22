@@ -1,0 +1,1 @@
+﻿dotnet .\bin\Debug\netcoreapp3.1\LoadTestEvH.dll <jsonFileLocation> <evhName> <evhConnString>
