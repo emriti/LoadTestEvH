@@ -1,7 +1,8 @@
 {
   "profiles": {
     "LoadTestEvH": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\emriti\\source\\repos\\_del\\LoadTestEvH\\LoadTestEvH\\ScheduleSampleUpsert.json\" \"schedule\" \"Endpoint=sb://evh-bm7-schedule-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=+s/ZjOZKSthM7q9OWjPEL6hS0f7HfLCv9lKQZd6nXiY=\" 300"
     }
   }
 }

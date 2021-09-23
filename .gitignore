@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/LoadTestEvH/Staging_Participant_20k_20210922.json
+/LoadTestEvH/Staging_ClassSession_20210922.json
+/LoadTestEvH/ScheduleSampleUpsert.json
+/LoadTestEvH/ScheduleSampleDelete.json
