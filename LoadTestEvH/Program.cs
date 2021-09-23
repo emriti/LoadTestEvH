@@ -28,7 +28,7 @@ namespace LoadTestEvH
                 var evhName = args[1];
                 var connString = args[2];
 
-                var batchSize = 500;
+                var batchSize = 300;
                 if (args.Length == 4)
                 {
                     var tmpBatchSize = Int32.Parse(args[3]);
